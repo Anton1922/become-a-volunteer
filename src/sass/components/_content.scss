@@ -1,0 +1,18 @@
+.volunteer-content {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	max-width: 1140px;
+	margin: 35px auto 0 112px;
+
+	&__aside {
+		margin-right: 2.5%;
+		width: 24.5%;
+		//max-width: 280px;
+	}
+
+	&__main {
+		width: 73%;
+		//max-width: 832px;
+	}
+}
