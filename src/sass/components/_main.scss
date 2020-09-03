@@ -1,4 +1,4 @@
-.join-main {
+.volunteer-main {
 
 	&__title {
 		position: relative;
@@ -22,10 +22,17 @@
 	}
 
 	&__container-image {
-		margin-bottom: 54px;
+		margin-bottom: 32px;
 	}
 
 	&__text:not(:last-of-type) {
 		margin-bottom: 25px;
+	}
+
+	&__text {
+
+		& span {
+			font-style: italic;
+		}
 	}
 }
