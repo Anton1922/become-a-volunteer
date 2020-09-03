@@ -9,12 +9,12 @@
 
   <title>Page "Become a volunteer" - www.less-homeless.com</title>
   
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;500;600;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <div class="volunteer-content">
-    <!-- Page volunteer the Program - Aside -->
+    <!-- Page Volunteer the Program - Aside -->
     <aside class="volunteer-content__aside volunteer-similar">
       <h4 class="volunteer-title-h4 volunteer-similar__title">Читайте также</h4>
 
@@ -29,24 +29,56 @@
           <a href="#" class="volunteer-similar__links-item">Спонсируйте животное-заповедник</a>
         </section>
       </div>
-    </aside> <!-- Page volunteer the Program - Aside -->
+    </aside> <!-- Page Volunteer the Program - Aside -->
     
-    <!-- Page volunteer the Program - Main -->
+    <!-- Page Volunteer the Program - Main -->
     <div class="volunteer-content__main">
-      <h1 class="volunteer-main__title">Присоединиться к программе</h1>
+      <h1 class="volunteer-main__title">Стать волонтёром приюта</h1>
 
       <div class="volunteer-main__container-image">
-        <img src="images/main-photo-min.jpg" alt="Две собаки" title="Обитатели приюта для собак" class="volunteer-main__image">
+        <img src="images/volunteer-main-min.jpg" alt="Волонтер и собака" title="Волонтер приюта с подопечным" class="volunteer-main__image">
       </div>
 
-      <p class="volunteer-text volunteer-main__text">Если посмотреть им в глаза, вы увидите — нет, не страх, не разочарование — надежду. На тепло, на семью и любовь. Вопреки всему, что с ними сделала жизнь.</p>
-    </div> <!-- Page volunteer the Program - Main -->
+      <p class="volunteer-text volunteer-main__text">Хотите стать волонтёром приюта для животных? На самом деле, это не так просто, как может показаться. <span>Оцените свои силы – пройдите небольшой тест:</span></p>
+
+      <!-- Page Become a Volunteer Interview -->
+      <div class="volunteer-program volunteer-interview">
+        <!-- Page Become a Volunteer First Question and Answers-->
+        <section class="volunteer-interview__question">
+          <div class="volunteer-interview__question-number">1.</div>
+
+          <div class="volunteer-interview__question-content">
+            <div class="volunteer-interview__question-container-image">
+              <img src="images/volunteer-first-min.jpg" class="volunteer-interview__question-image" alt="Девушка-волонтёр и собака" title="Девушка-волонтёр и собака">
+            </div>
+
+            <p class="volunteer-interview__question-text"><span>Вам есть 18 лет?</span> Работа волонтера физически сложна. Это не «почесать» за ушком. Это – полноценно присматривать за подопечными, чистить вольеры, утеплять их на зиму, кормить животных и мыть миски, и т.д.</p>
+
+            <div class="volunteer-interview__answers">
+              <div class="volunteer-interview__answers-item volunteer-interview__answers-item--positive">
+                <input id="positive" type="radio" name="answer"></input>
+                <label for="positive">Да</label>
+              </div>
+              
+              <div class="volunteer-interview__answers-item volunteer-interview__answers-item--negative">
+                <input id="negative" type="radio" name="answer"></input>
+                <label for="negative">Нет</label>
+              </div>
+
+              <!-- <div class="volunteer-interview__answers-item volunteer-interview__answers-item--neutral">
+                <input id="neutral" type="radio" name="answer"></input>
+                <label for="neutral">Не знаю</label>
+              </div> -->
+            </div>
+          </div>
+        </section> <!-- Page Become a Volunteer First Question and Answers -->
+      </div><!-- Page Become a Volunteer Interview -->
+    </div> <!-- Page Volunteer the Program - Main -->
 
     <div class="volunteer__block volunteer-subscribe">
       <h3 class="volunteer-title-h3 volunteer-subscribe__title">Подписаться на рассылку</h3>
 
       <p class="volunteer-text volunteer-subscribe__text">Мы будем присылать наши новости не чаще одного раза в месяц. Отписаться от писем можно в любой момент.</p>
-
       <!-- Here will be WP widget -->
     </div>
   </div>
