@@ -65,11 +65,11 @@ input[type=number] {
   -moz-appearance:textfield;
 }
 
-.join-program:not(:last-of-type) {
-  margin-bottom: 110px;
+.volunteer-program:not(:last-of-type) {
+  margin-bottom: 75px;
 }
 
-.join-title-h2 {
+.volunteer-title-h2 {
   font-weight: 700;
   font-size: 36px;
 
@@ -89,34 +89,34 @@ input[type=number] {
   }
 }
 
-.join-title-h3 {
+.volunteer-title-h3 {
   margin-bottom: 32px;
   font-weight: 700;
   font-size: 24px;
 }
 
-.join-title-h4 {
+.volunteer-title-h4 {
   margin: 26px 0 16px 0;
   font-weight: 700;
   font-size: 18px;
 }
 
-.join-text {
-  font-weight: 400;
-  font-size: 16px
+.volunteer-text {
+  font-weight: 500;
+  font-size: 20px
 }
 
-.join-text:not(.join-main__text) {
+.volunteer-text:not(.volunteer-main__text) {
   max-width: 515px;
 }
 
-.join-text-second {
+.volunteer-text-second {
   margin-bottom: 20px;
   font-size: 18px;
   font-weight: 400;
 }
 
-.join-link-program {
+.volunteer-link-program {
   color: $text-common-black;
 
   &:hover span::after {
@@ -125,13 +125,13 @@ input[type=number] {
   }
 }
 
-.join-contacts {
+.volunteer-contacts {
   display: flex;
   flex-direction: column;
   margin-top: 55px;
 }
 
-.join-link-contact {
+.volunteer-link-contact {
   font-weight: 700;
   font-size: 18px;
   color: $text-common-black;
@@ -145,20 +145,20 @@ input[type=number] {
   }
 }
 
-.join-image-caption {
+.volunteer-image-caption {
   margin-bottom: 55px;
   max-width: 500px;
   font-weight: 400;
   font-size: 18px;
 }
 
-.join-buttons {
+.volunteer-buttons {
   display: flex;
   justify-content: flex-start;
   margin-top: 26px;
 }
 
-.join-button {
+.volunteer-button {
   padding: 25px 79px;
   max-width: 420px;
   font-weight: 600;
