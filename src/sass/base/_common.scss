@@ -65,7 +65,7 @@ input[type=number] {
   -moz-appearance:textfield;
 }
 
-.volunteer-program:not(:last-of-type) {
+.volunteer-question:not(:last-of-type) {
   margin-bottom: 75px;
 }
 
@@ -102,12 +102,12 @@ input[type=number] {
 }
 
 .volunteer-text {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 20px
 }
 
 .volunteer-text:not(.volunteer-main__text) {
-  max-width: 515px;
+  max-width: 620px;
 }
 
 .volunteer-text-second {
