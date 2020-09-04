@@ -472,6 +472,10 @@ input[type=number] {
   margin-bottom: 75px;
 }
 
+.volunteer-question:last-of-type {
+  margin-bottom: 135px;
+}
+
 .volunteer-title-h2 {
   font-weight: 700;
   font-size: 36px;
@@ -530,17 +534,6 @@ input[type=number] {
   border-color: #bd8700;
 }
 
-.volunteer-contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin-top: 55px;
-}
-
 .volunteer-link-contact {
   font-weight: 700;
   font-size: 18px;
@@ -551,7 +544,7 @@ input[type=number] {
   font-weight: 400;
 }
 
-.volunteer-link-contact:hover {
+.volunteer-link-contact:hover span {
   color: #bd8700;
 }
 
@@ -796,14 +789,16 @@ input[type=number] {
   cursor: pointer;
 }
 
+.volunteer-interview__answers-item input[type=radio]:hover + label::before {
+  border-color: rgba(236, 169, 0, 0.5);
+}
+
 .volunteer-interview__answers-item input[type=radio]:checked + label {
   color: #000;
 }
 
 .volunteer-interview__answers-item input[type=radio]:checked + label::before {
   border: 2px solid #eca900;
-  -webkit-box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
-  box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
 }
 
 .volunteer-interview__answers-item input[type=radio]:checked + label[data-positive]::before {
@@ -821,7 +816,7 @@ input[type=number] {
 }
 
 .volunteer-subscribe {
-  margin-top: 70px;
+  margin-top: 125px;
   width: 100%;
 }
 
@@ -832,4 +827,54 @@ input[type=number] {
 .volunteer-subscribe__text {
   margin-bottom: 15px;
   color: #707070;
+}
+
+.volunteer-conclusion__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.volunteer-conclusion__text {
+  max-width: 710px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.volunteer-conclusion__text:first-of-type {
+  font-weight: 700;
+}
+
+.volunteer-conclusion__text:not(:last-of-type) {
+  margin-bottom: 25px;
+}
+
+.volunteer-conclusion__link {
+  position: relative;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+}
+
+.volunteer-conclusion__link::after {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  bottom: -5%;
+  width: 100%;
+  height: 2px;
+  background-color: #eca900;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.volunteer-conclusion__link:hover::after {
+  height: 105%;
 }
