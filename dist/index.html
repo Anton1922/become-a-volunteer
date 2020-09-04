@@ -9,7 +9,7 @@
 
   <title>Page "Become a volunteer" - www.less-homeless.com</title>
   
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Roboto:wght@500;700&family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -42,9 +42,9 @@
       <p class="volunteer-text volunteer-main__text">Хотите стать волонтёром приюта для животных? На самом деле, это не так просто, как может показаться. <span>Оцените свои силы – пройдите небольшой тест:</span></p>
 
       <!-- Page Become a Volunteer Interview -->
-      <div class="volunteer-program volunteer-interview">
+      <div class="volunteer-interview">
         <!-- Page Become a Volunteer First Question and Answers-->
-        <section class="volunteer-interview__question">
+        <section class="volunteer-question volunteer-interview__question">
           <div class="volunteer-interview__question-number">1.</div>
 
           <div class="volunteer-interview__question-content">
@@ -52,26 +52,146 @@
               <img src="images/volunteer-first-min.jpg" class="volunteer-interview__question-image" alt="Девушка-волонтёр и собака" title="Девушка-волонтёр и собака">
             </div>
 
-            <p class="volunteer-interview__question-text"><span>Вам есть 18 лет?</span> Работа волонтера физически сложна. Это не «почесать» за ушком. Это – полноценно присматривать за подопечными, чистить вольеры, утеплять их на зиму, кормить животных и мыть миски, и т.д.</p>
+            <p class="volunteer-text volunteer-interview__question-text"><span>Вам есть 18 лет?</span> Работа волонтера физически сложна. <br>Это не «почесать» за ушком. Это – полноценно присматривать <br>за подопечными, чистить вольеры, утеплять их на зиму, кормить животных и мыть миски, и т.д.</p>
 
             <div class="volunteer-interview__answers">
               <div class="volunteer-interview__answers-item volunteer-interview__answers-item--positive">
-                <input id="positive" type="radio" name="answer"></input>
-                <label for="positive">Да</label>
+                <input id="positive-first" class="volunteer-interview-radio" type="radio" name="answer-first"></input>
+                <label for="positive-first" data-positive>Да</label>
               </div>
               
               <div class="volunteer-interview__answers-item volunteer-interview__answers-item--negative">
-                <input id="negative" type="radio" name="answer"></input>
-                <label for="negative">Нет</label>
+                <input id="negative-first" class="volunteer-interview-radio" type="radio" name="answer-first"></input>
+                <label for="negative-first" data-negative>Нет</label>
               </div>
 
               <!-- <div class="volunteer-interview__answers-item volunteer-interview__answers-item--neutral">
-                <input id="neutral" type="radio" name="answer"></input>
-                <label for="neutral">Не знаю</label>
+                <input id="neutral-first" class="volunteer-interview-radio" type="radio" name="answer-first"></input>
+                <label for="neutral-first" data-neutral>Не знаю</label>
               </div> -->
             </div>
           </div>
         </section> <!-- Page Become a Volunteer First Question and Answers -->
+
+        <!-- Page Become a Volunteer Second Question and Answers-->
+        <section class="volunteer-question volunteer-interview__question">
+          <div class="volunteer-interview__question-number">2.</div>
+
+          <div class="volunteer-interview__question-content">
+            <div class="volunteer-interview__question-container-image">
+              <img src="images/volunteer-second-min.jpg" class="volunteer-interview__question-image" alt="Собаки" title="Собаки">
+            </div>
+
+            <p class="volunteer-text volunteer-interview__question-text"><span>Вы готовы еженедельно в любую погоду ездить к своим подопечным, не нарушая графика?</span> Животные очень быстро привыкают к «своему» человеку и начинают ждать именно его. Скучать и переживать, если он не приходит.</p>
+
+            <div class="volunteer-interview__answers">
+              <div class="volunteer-interview__answers-item volunteer-interview__answers-item--positive">
+                <input id="positive-second" class="volunteer-interview-radio" type="radio" name="answer-second"></input>
+                <label for="positive-second" data-positive>Да</label>
+              </div>
+              
+              <div class="volunteer-interview__answers-item volunteer-interview__answers-item--negative">
+                <input id="negative-second" class="volunteer-interview-radio" type="radio" name="answer-second"></input>
+                <label for="negative-second" data-negative>Нет</label>
+              </div>
+
+              <div class="volunteer-interview__answers-item volunteer-interview__answers-item--neutral">
+                <input id="neutral-second" class="volunteer-interview-radio" type="radio" name="answer-second"></input>
+                <label for="neutral-second" data-neutral>Не знаю</label>
+              </div>
+            </div>
+          </div>
+        </section> <!-- Page Become a Volunteer Second Question and Answers -->
+
+        <!-- Page Become a Volunteer Third Question and Answers-->
+        <section class="volunteer-question volunteer-interview__question">
+          <div class="volunteer-interview__question-number">3.</div>
+
+          <div class="volunteer-interview__question-content">
+            <div class="volunteer-interview__question-container-image">
+              <img src="images/volunteer-third-min.jpg" class="volunteer-interview__question-image" alt="Собака" title="Собака">
+            </div>
+
+            <p class="volunteer-text volunteer-interview__question-text"><span>Вы готовы делать это продолжительное время (а не месяц-два)?</span> Если у вас много других интересов и увлечений – хорошо подумайте. Не стоит «пробовать», если вы не уверены, что через месяц вам не надоест.</p>
+
+            <div class="volunteer-interview__answers">
+              <div class="volunteer-interview__answers-item volunteer-interview__answers-item--positive">
+                <input id="positive-third" class="volunteer-interview-radio" type="radio" name="answer-third"></input>
+                <label for="positive-third" data-positive>Да</label>
+              </div>
+              
+              <div class="volunteer-interview__answers-item volunteer-interview__answers-item--negative">
+                <input id="negative-third" class="volunteer-interview-radio" type="radio" name="answer-third"></input>
+                <label for="negative-third" data-negative>Нет</label>
+              </div>
+
+              <div class="volunteer-interview__answers-item volunteer-interview__answers-item--neutral">
+                <input id="neutral-third" class="volunteer-interview-radio" type="radio" name="answer-third"></input>
+                <label for="neutral-third" data-neutral>Не знаю</label>
+              </div>
+            </div>
+          </div>
+        </section> <!-- Page Become a Volunteer Third Question and Answers -->
+
+        <!-- Page Become a Volunteer Fourth Question and Answers-->
+        <section class="volunteer-question volunteer-interview__question">
+          <div class="volunteer-interview__question-number">4.</div>
+
+          <div class="volunteer-interview__question-content">
+            <div class="volunteer-interview__question-container-image">
+              <img src="images/volunteer-fourth-min.jpg" class="volunteer-interview__question-image" alt="Собака" title="Собака">
+            </div>
+
+            <p class="volunteer-text volunteer-interview__question-text"><span>Вас не пугает то, что до большинства приютов добираться совсем нелегко?</span> Часто они находятся в промзонах и отнюдь не в шаговой доступности от метро.</p>
+
+            <div class="volunteer-interview__answers">
+              <div class="volunteer-interview__answers-item volunteer-interview__answers-item--positive">
+                <input id="positive-fourth" class="volunteer-interview-radio" type="radio" name="answer-fourth"></input>
+                <label for="positive-fourth" data-positive>Да</label>
+              </div>
+              
+              <div class="volunteer-interview__answers-item volunteer-interview__answers-item--negative">
+                <input id="negative-fourth" class="volunteer-interview-radio" type="radio" name="answer-fourth"></input>
+                <label for="negative-fourth" data-negative>Нет</label>
+              </div>
+
+              <div class="volunteer-interview__answers-item volunteer-interview__answers-item--neutral">
+                <input id="neutral-fourth" class="volunteer-interview-radio" type="radio" name="answer-fourth"></input>
+                <label for="neutral-fourth" data-neutral>Не знаю</label>
+              </div>
+            </div>
+          </div>
+        </section> <!-- Page Become a Volunteer Fourth Question and Answers -->
+
+        <!-- Page Become a Volunteer Fifth Question and Answers-->
+        <section class="volunteer-question volunteer-interview__question">
+          <div class="volunteer-interview__question-number">5.</div>
+
+          <div class="volunteer-interview__question-content">
+            <div class="volunteer-interview__question-container-image">
+              <img src="images/volunteer-fifth-min.jpg" class="volunteer-interview__question-image" alt="Собака" title="Собака">
+            </div>
+
+            <p class="volunteer-text volunteer-interview__question-text"><span>Вы готовы к высокой ответственности?</span> Быть волонтёром приюта – это взять на себя ответственность за жизнь. Уже и так порядком искалеченную жизнь, не готовую к еще одному предательству.</p>
+
+            <div class="volunteer-interview__answers">
+              <div class="volunteer-interview__answers-item volunteer-interview__answers-item--positive">
+                <input id="positive-fifth" class="volunteer-interview-radio" type="radio" name="answer-fifth"></input>
+                <label for="positive-fifth" data-positive>Да</label>
+              </div>
+              
+              <div class="volunteer-interview__answers-item volunteer-interview__answers-item--negative">
+                <input id="negative-fifth" class="volunteer-interview-radio" type="radio" name="answer-fifth"></input>
+                <label for="negative-fifth" data-negative>Нет</label>
+              </div>
+
+              <div class="volunteer-interview__answers-item volunteer-interview__answers-item--neutral">
+                <input id="neutral-fifth" class="volunteer-interview-radio" type="radio" name="answer-fifth"></input>
+                <label for="neutral-fifth" data-neutral>Не знаю</label>
+              </div>
+            </div>
+          </div>
+        </section> <!-- Page Become a Volunteer Fifth Question and Answers -->
       </div><!-- Page Become a Volunteer Interview -->
     </div> <!-- Page Volunteer the Program - Main -->
 
