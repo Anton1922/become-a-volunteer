@@ -69,6 +69,10 @@ input[type=number] {
   margin-bottom: 75px;
 }
 
+.volunteer-question:last-of-type {
+  margin-bottom: 135px;
+}
+
 .volunteer-title-h2 {
   font-weight: 700;
   font-size: 36px;
@@ -125,12 +129,6 @@ input[type=number] {
   }
 }
 
-.volunteer-contacts {
-  display: flex;
-  flex-direction: column;
-  margin-top: 55px;
-}
-
 .volunteer-link-contact {
   font-weight: 700;
   font-size: 18px;
@@ -140,7 +138,7 @@ input[type=number] {
     font-weight: 400;
   }
 
-  &:hover {
+  &:hover span {
     color: $text-gold-hover;
   }
 }
