@@ -1,4 +1,94 @@
 .volunteer-interview {
 
-	
+	&__question {
+		display: flex;
+
+		&-number {
+			margin-right: 35px;
+			padding: 10px 5px;
+			font-family: 'Roboto';
+			font-weight: 700;
+			font-size: 48px;
+			line-height: 56px;
+			color: $text-gold;
+		}
+
+		&-container-image {
+			margin-bottom: 40px;
+			max-width: 624px;
+		}
+
+		&-text {
+			margin-bottom: 35px;
+
+			& span {
+				font-weight: 700;
+			}
+		}
+	}
+
+	&__answers {
+		display: flex;
+
+		&-item {
+			position: relative;
+			display: flex;
+			align-items: center;
+			margin-right: 95px;
+			cursor: pointer;
+
+			& input[type=radio] {
+				z-index: -1;
+				opacity: 0;
+				margin-right: 8px;
+				width: 28px;
+				height: 28px;
+			}
+
+			& input + label {
+				display: inline-flex;
+				font-family: 'IBM Plex Sans';
+				font-weight: 500;
+				font-size: 18px;
+				color: $label-grey;
+
+				&::before {
+					content: '';
+					z-index: 100;
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 28px;
+					height: 28px;
+					border: 1px solid $border-radio-grey;
+					border-radius: 4px;
+					box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
+					cursor: pointer;
+				}
+			}
+
+			& input[type=radio]:checked + label {
+				color: $text-common-black;
+			}
+
+			& input[type=radio]:checked + label::before {
+				border: 2px solid $border-radio-gold;
+				box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
+			}
+
+			& input[type=radio]:checked + label[data-positive]::before {
+				background-image: url(images/positive.svg);
+			}
+
+			& input[type=radio]:checked + label[data-negative]::before {
+				background-image: url(images/negative.svg);
+			}
+
+			& input[type=radio]:checked + label[data-neutral]::before {
+				background-image: url(images/neutral.svg);
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+		}
+	}
 }
